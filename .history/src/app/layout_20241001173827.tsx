@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const font = Montserrat({
-  subsets: ["latin"],
-  display: "swap",
-});
+const font = Montserrat;
 
 export const metadata: Metadata = {
   title: "Gam3r.Story",
@@ -18,8 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body className={font.className}>{children}</body>
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
