@@ -8,7 +8,7 @@ export interface PageProps {
   noFooter?: boolean;
 }
 
-export default function Page(props: PageProps) {
+export default function Page(props: PaginaProps) {
   return (
     <div
       className="flex flex-col min-h-screen"

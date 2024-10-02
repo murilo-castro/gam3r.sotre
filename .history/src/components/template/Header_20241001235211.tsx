@@ -1,11 +1,11 @@
 import Logo from "../shared/Logo";
-import CartIcon from "@/components/shared/CartIcon";
+import IconeCarrinho from "@/components/shared/CartIcon";
 import Link from "next/link";
 // import useCarrinho from '@/data/hooks/useCarrinho'
 
 export default function Header() {
-  const numberOfItems = 0;
-  // const { numberOfItems } = useCarrinho()
+  const qtdeItens = 0;
+  // const { qtdeItens } = useCarrinho()
   return (
     <div
       className="flex flex-col h-20"
@@ -18,7 +18,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <Logo />
           <Link href="/checkout/carrinho">
-            <CartIcon numberOfItems={numberOfItems} />
+            <IconeCarrinho numberOfItems={qtdeItens} />
           </Link>
         </div>
       </div>

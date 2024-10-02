@@ -1,14 +1,16 @@
-import Footer from "./Footer";
-import Header from "./Header";
+import Logo from "@/components/shared/Logo";
+import CartIcon from "@/components/shared/CartIcon";
+import Link from "next/link";
+import useCart from "@/data/";
 
-export interface PageProps {
+export interface PaginaProps {
   children: any;
   className?: string;
-  noHeader?: boolean;
-  noFooter?: boolean;
+  semCabecalho?: boolean;
+  semRodape?: boolean;
 }
 
-export default function Page(props: PageProps) {
+export default function Pagina(props: PaginaProps) {
   return (
     <div
       className="flex flex-col min-h-screen"
@@ -21,11 +23,11 @@ export default function Page(props: PageProps) {
         className="flex-1 flex flex-col w-screen"
         style={{ background: 'url("/background.png")' }}
       >
-        {!props.noHeader && <Header />}
+        {!props.semCabecalho && <Cabecalho />}
         <main className={`flex-1 flex flex-col ${props.className ?? ""}`}>
           {props.children}
         </main>
-        {!props.noFooter && <Footer />}
+        {!props.semRodape && <Footer />}
       </div>
     </div>
   );

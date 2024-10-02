@@ -7,7 +7,7 @@ import {
 } from "@tabler/icons-react";
 import Logo from "../shared/Logo";
 
-export default function Footer() {
+export default function Rodape() {
   return (
     <footer className="flex flex-col bg-black/30 text-zinc-400 mt-10">
       <div className="h-px bg-gradient-to-r from-violet-600/20 via-violet-600/80 to-violet-600/20"></div>
