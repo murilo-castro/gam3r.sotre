@@ -26,7 +26,9 @@ export default function ScoreReview(props: ScoreReviewProps) {
 
   return (
     <div className="flex gap-0.5 text-emerald-400">
-      {starScore(props.score)}
+      {starScore(props.score).map((star, index) => (
+        <span key={index}>{star}</span>
+      ))}
     </div>
   );
 }
