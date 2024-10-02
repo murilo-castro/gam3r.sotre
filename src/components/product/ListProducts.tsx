@@ -1,7 +1,7 @@
 "use client";
 import { products } from "@/core";
 import ProductItem from "./ProductItem";
-import ProductNotFound from "./ProductNotFount";
+import ProductNotFound from "./ProductNotFound";
 // import useProdutos from '@/data/hooks/useProdutos'
 
 export default function ListProducts() {
