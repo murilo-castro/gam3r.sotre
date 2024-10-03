@@ -32,4 +32,10 @@ body {
   .container {
     @apply max-w-7xl mx-auto px-10
   }
+
+  .button {
+    @apply flex justify-center items-center;
+    @apply gap-2 rounded-md px-9 h-8;
+    @apply text-sm font-semibold;
+  }
 }

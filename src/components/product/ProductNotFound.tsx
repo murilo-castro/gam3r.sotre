@@ -7,7 +7,7 @@ export interface ProductNotFoundProps {
 
 export default function ProductNotFound(props: ProductNotFoundProps) {
   return (
-    <div className="flex-1 flex flex-col justify-center items-center text-violet-300 bg-red-500">
+    <div className="flex-1 flex flex-col justify-center items-center text-violet-300 ">
       <IconDevicesPcOff size={180} stroke={0.5} />
       <span className="text-violet-300 font-light">Produto não encontrado</span>
       {!props.noBackButton && (
